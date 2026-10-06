@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+python-docx
+jupyter
+scipy
+requests
+nbformat
