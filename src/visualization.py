@@ -36,7 +36,7 @@ def plot_metrics(k_df, save_path=None):
     
     plt.tight_layout()
     if save_path:
-        plt.savefig(save_path, dpi=200)
+        plt.savefig(save_path, dpi=72)
     plt.close()
 
 def plot_dendrogram(X, save_path=None):
@@ -48,7 +48,7 @@ def plot_dendrogram(X, save_path=None):
     plt.ylabel('Distance')
     plt.tight_layout()
     if save_path:
-        plt.savefig(save_path, dpi=200)
+        plt.savefig(save_path, dpi=72)
     plt.close()
 
 def plot_pca_2d(X_pca, labels, pca_model, save_path=None):
@@ -60,7 +60,7 @@ def plot_pca_2d(X_pca, labels, pca_model, save_path=None):
     plt.legend(title='Cluster')
     plt.tight_layout()
     if save_path:
-        plt.savefig(save_path, dpi=200)
+        plt.savefig(save_path, dpi=72)
     plt.close()
 
 def plot_pca_3d(X_pca, labels, pca_model, save_path=None):
@@ -75,7 +75,7 @@ def plot_pca_3d(X_pca, labels, pca_model, save_path=None):
     ax.add_artist(legend1)
     plt.tight_layout()
     if save_path:
-        plt.savefig(save_path, dpi=200)
+        plt.savefig(save_path, dpi=72)
     plt.close()
 
 def plot_cluster_sizes(labels, save_path=None):
@@ -89,7 +89,7 @@ def plot_cluster_sizes(labels, save_path=None):
         plt.text(i, v + 2, str(v), ha='center')
     plt.tight_layout()
     if save_path:
-        plt.savefig(save_path, dpi=200)
+        plt.savefig(save_path, dpi=72)
     plt.close()
 
 def plot_cluster_profiles_heatmap(profiles, save_path=None):
@@ -102,7 +102,7 @@ def plot_cluster_profiles_heatmap(profiles, save_path=None):
     plt.xlabel('Feature')
     plt.tight_layout()
     if save_path:
-        plt.savefig(save_path, dpi=200)
+        plt.savefig(save_path, dpi=72)
     plt.close()
 
 def plot_boxplots(df, labels, features, save_path=None):
@@ -125,7 +125,7 @@ def plot_boxplots(df, labels, features, save_path=None):
         
     plt.tight_layout()
     if save_path:
-        plt.savefig(save_path, dpi=200)
+        plt.savefig(save_path, dpi=72)
     plt.close()
 
 def plot_radar_chart(profiles, save_path=None):
@@ -157,7 +157,7 @@ def plot_radar_chart(profiles, save_path=None):
     plt.legend(loc='upper right', bbox_to_anchor=(1.3, 1.1))
     plt.tight_layout()
     if save_path:
-        plt.savefig(save_path, dpi=200)
+        plt.savefig(save_path, dpi=72)
     plt.close()
 
 def plot_pairplot(df, labels, save_path=None):
@@ -170,7 +170,7 @@ def plot_pairplot(df, labels, save_path=None):
     g = sns.pairplot(df_plot, hue='Cluster', palette='tab10', corner=True, diag_kind='kde')
     g.fig.suptitle('Pairplot of Log-Transformed Features Colored by Cluster', y=1.02)
     if save_path:
-        g.savefig(save_path, dpi=200)
+        g.savefig(save_path, dpi=72)
     plt.close()
 
 def plot_gmm_bic(X, k_range, save_path=None):
@@ -191,7 +191,7 @@ def plot_gmm_bic(X, k_range, save_path=None):
     plt.legend()
     plt.tight_layout()
     if save_path:
-        plt.savefig(save_path, dpi=200)
+        plt.savefig(save_path, dpi=72)
     plt.close()
 
 def plot_silhouette_per_cluster(X, labels, save_path=None):
@@ -232,5 +232,5 @@ def plot_silhouette_per_cluster(X, labels, save_path=None):
     
     plt.tight_layout()
     if save_path:
-        plt.savefig(save_path, dpi=200)
+        plt.savefig(save_path, dpi=72)
     plt.close()

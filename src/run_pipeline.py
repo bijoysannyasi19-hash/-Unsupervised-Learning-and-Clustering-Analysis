@@ -53,7 +53,7 @@ def draw_architecture(save_path):
         
     plt.title("Pipeline Architecture")
     plt.tight_layout()
-    plt.savefig(save_path, dpi=200)
+    plt.savefig(save_path, dpi=72)
     plt.close()
 
 def main():
