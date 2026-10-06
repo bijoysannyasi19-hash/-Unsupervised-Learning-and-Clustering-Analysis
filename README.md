@@ -160,5 +160,4 @@ pip install -r requirements.txt
 ## Credits and License
 
 - **Dataset Credit:** UCI Machine Learning Repository (Margarida G. M. S. Cardoso).
-- **Author:** bijoysannyasi19-hash
 - **License:** MIT License
