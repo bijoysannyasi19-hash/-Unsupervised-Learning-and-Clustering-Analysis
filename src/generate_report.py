@@ -39,7 +39,7 @@ def generate_report(results_dir, figures_dir, output_path):
     # Title Page
     title = doc.add_heading('Week 3 Task: Unsupervised Learning and Clustering Analysis', 0)
     title.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    author = doc.add_paragraph('\n[Your Name]\nDate: 2026-10-06\n')
+    author = doc.add_paragraph('\nbijoysannyasi19-hash\nDate: 2026-10-06\n')
     author.alignment = WD_ALIGN_PARAGRAPH.CENTER
     doc.add_page_break()
     
